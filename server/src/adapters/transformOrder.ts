@@ -1,5 +1,10 @@
 import { InputData, OutputOrderData, OrderDetail } from '../records/';
 
+/**
+ * Transforms the input order to output order format
+ * @param data @param orderList
+ * @returns OutputOrderData format data
+ */
 export const transformOrders = (data: InputData, orderList: OrderDetail[]): OutputOrderData => {
   Object.keys(data.order).map((item) => {
     const OrderItemDetail: OrderDetail = {

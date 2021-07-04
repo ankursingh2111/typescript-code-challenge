@@ -4,6 +4,11 @@ import { transformOrders } from './transformOrder';
 import { buildCustomerList } from './transformCustomer';
 import { InputData, OutputOrderData, OutputData, OrderDetail, Customer } from '../records/';
 
+/**
+ * Transforms the input order to output order format after readind the data from json file
+ * @param path path of the file
+ * @returns OutputData format data
+ */
 export const getAndTransformFileData = async (path: fs.PathLike) => {
   const inputFileData: InputData[] = await readJson(path).catch((err) => {
     console.log(err);

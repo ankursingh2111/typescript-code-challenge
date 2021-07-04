@@ -12,6 +12,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.callApi = void 0;
 const getCustomers_1 = require("../repositories/getCustomers");
 const getOrders_1 = require("../repositories/getOrders");
+/**
+ * Calls the dataStore based on the serviceName
+ * @param serviceName customer or orders endpoint call.
+ * @returns An array of Customers or Orders.
+ */
 function callApi(serviceName) {
     return __awaiter(this, void 0, void 0, function* () {
         let data;

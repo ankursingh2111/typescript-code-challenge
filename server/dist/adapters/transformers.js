@@ -13,6 +13,11 @@ exports.transformData = exports.getAndTransformFileData = void 0;
 const readFile_1 = require("./readFile");
 const transformOrder_1 = require("./transformOrder");
 const transformCustomer_1 = require("./transformCustomer");
+/**
+ * Transforms the input order to output order format after readind the data from json file
+ * @param path path of the file
+ * @returns OutputData format data
+ */
 const getAndTransformFileData = (path) => __awaiter(void 0, void 0, void 0, function* () {
     const inputFileData = yield readFile_1.readJson(path).catch((err) => {
         console.log(err);
