@@ -47,6 +47,7 @@ Your work will be evaluated primarily on:
 # test
 
 1.  `npm run test` from project root directory.
+2.  App test might not start after the server tests, please press `a` or follow the direction in prompt.
 
 # Start
 
