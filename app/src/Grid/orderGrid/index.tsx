@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { DataGrid } from '@material-ui/data-grid';
 import { columns } from './columns';
-import { OrderRowData } from '../../records';
+import { OrderRowData, GridComponentProps } from '../../records';
 import { modifyData } from './reducer';
 
-export const OrderGrid = ({ buttonVal }: { buttonVal: string }) => {
+export const OrderGrid: React.FC<GridComponentProps> = ({ buttonVal }) => {
   const [rows, setRows] = useState<OrderRowData[]>(new Array<OrderRowData>());
   useEffect(() => {
     if (buttonVal) {

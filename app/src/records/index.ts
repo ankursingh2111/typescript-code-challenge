@@ -27,3 +27,7 @@ export interface OutputOrderData extends GeneralData {
 }
 
 export interface OrderRowData extends OrderInfo, OrderDetail {}
+
+export interface GridComponentProps {
+  buttonVal: string;
+}
