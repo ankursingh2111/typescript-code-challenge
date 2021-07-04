@@ -24,7 +24,8 @@
     "test": "yarn workspaces run test",
     "lint": "yarn workspaces run lint",
     "build": "yarn workspaces run build",
-    "start": "yarn workspaces run start"
+    "start": "yarn workspaces run start",
+    "postinstall": "(cd server && npm install); (cd app && npm install)"
   },
   "repository": {
     "type": "git",
